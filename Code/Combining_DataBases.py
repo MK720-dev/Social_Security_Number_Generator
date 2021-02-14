@@ -26,6 +26,7 @@ def sort(file):
         if index[:2] == '2B':
             List.append(f"{index}  {row['Nom_commune']}")
     with open('Sorted_file.txt', 'w') as Dt :
+        Dt.write('Code_commune_INSEE  Nom_commune\n')
         for x in range(len(List)):
             #print(List[x] + '\n')
             Dt.write(List[x] + '\n')
