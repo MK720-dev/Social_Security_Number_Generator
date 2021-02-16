@@ -89,6 +89,7 @@ def combine(file1, file2):
     df2 = pandas.read_csv(file2, delimiter='  ', index_col='Code_commune_INSEE', encoding='iso-8859-1')
 
     Data_file = open(r'DataBase.txt', 'a') #file for the final database to be used
+    Data_file.write("Department_Code  Commune_Code  Department_Name  Commune_Name\n")
     for index1, row1 in df1.iterrows():
         if (index1[:2] not in ['97','98', '2A' , '2B']):
             for index2 , row2 in df2.iterrows():
@@ -111,10 +112,6 @@ def combine(file1, file2):
         DB = DataBase.read()
         print(DB)
 
-
-                                    
 if __name__ == '__main__':
-    sort('laposte_hexasmal.csv','code-officiel-geographique-2019-regions-et-departement.csv' )
+    #sort('laposte_hexasmal.csv','code-officiel-geographique-2019-regions-et-departement.csv' )
     combine('file2_Sorted.txt','file1_Sorted.txt')
-
-
