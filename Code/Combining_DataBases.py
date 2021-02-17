@@ -113,5 +113,5 @@ def combine(file1, file2):
         print(DB)
 
 if __name__ == '__main__':
-    #sort('laposte_hexasmal.csv','code-officiel-geographique-2019-regions-et-departement.csv' )
+    sort('laposte_hexasmal.csv','code-officiel-geographique-2019-regions-et-departement.csv' )
     combine('file2_Sorted.txt','file1_Sorted.txt')
