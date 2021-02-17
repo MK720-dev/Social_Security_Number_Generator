@@ -63,12 +63,12 @@ def Generate_DataBase(List ,file ,Surname, Name ):
 def Create_csv (List):
     Headers = ['Name', 'Surname','Gender', 'Month of Birth', 'Year of Birth', 'Birth Department', 'Birth Commune','Email']
     with open('Social_Sec_DataBase.csv' , 'a') as SDB :
-        file_writer = csv.writer(SDB, delimiter=';',quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        file_writer = csv.writer(SDB, delimiter=',',quotechar='|', quoting=csv.QUOTE_MINIMAL)
         file_writer.writerow(Headers)
         for x in range(len(List)):
             file_writer.writerow(List[x])
     with open('Social_Sec_DataBase.csv', 'r') as SDB:
-        file_reader = csv.reader(SDB, delimiter=';', quotechar='|')
+        file_reader = csv.reader(SDB, delimiter=',', quotechar='|')
         for row in file_reader:
             print(row)
             print('\n')
