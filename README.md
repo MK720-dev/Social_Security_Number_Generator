@@ -29,7 +29,7 @@ The sorted files are :
 
 - '*file2_SSorted*' for '*code-officiel-geographique-2019-regions-et-departement.csv*' .
 
-Then, since it is simpler to work with on database than two distinct one, I used '*Combining_DataBases.py*' to combine the two csv file into one .txt file named 'DataBase' .
+Then, since it is simpler to work with on database than two distinct one, I used '*Combining_DataBases.py*' to combine the two csv files into one .txt file named 'DataBase' .
 
 ### Second Step : Generating the Fakes Social security codes :
 
