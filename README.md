@@ -64,4 +64,4 @@ Each set of data (Gender , Birth Year , Birth Month , Region of Birth, Commune o
 
 Then they were all zipped in a final list and written to a csv file : '*Social_Sec_DataBase.csv*' .
 
-It is worth noting that the code only assigns names and surnames that occured in the official databases more than 100 times !
+It is worth noting that the code only assigns names and surnames that occured in the official databases more than 100 times!
