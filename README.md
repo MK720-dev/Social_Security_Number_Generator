@@ -15,7 +15,7 @@ Create a French Social Security Number Generator, and then from that **fake numb
 ---
 ### First Step :
 
-Using Official Databases for Fench Regions ('Départements')  and Communes :
+Using Official Databases for French Regions ('Départements')  and Communes :
 
 - '*code-officiel-geographique-2019-regions-et-departement.csv*'  for the Region Codes and Names.
 
